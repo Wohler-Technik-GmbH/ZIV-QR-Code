@@ -1,0 +1,28 @@
+target-version = "py311"
+line-length = 120
+
+[lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort (Import-Sortierung)
+    "N",   # pep8-naming
+    "UP",  # pyupgrade (moderne Python-Syntax)
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "SIM", # flake8-simplify
+]
+
+ignore = [
+    "E501",  # Zeilenlänge (wird von Formatter übernommen)
+]
+
+[lint.isort]
+known-first-party = ["helper"]
+
+
+[format]
+quote-style = "double"
+indent-style = "space"
+
