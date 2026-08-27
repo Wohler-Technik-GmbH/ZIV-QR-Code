@@ -1,0 +1,3 @@
+[submodule "field_name"]
+	path = field_name
+	url = https://github.com/Wohler-Technik-GmbH/ZIV-QR-Code-Field-numbers.git
